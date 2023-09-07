@@ -7,5 +7,5 @@
 - pip install requests paramiko
 - Create new task for this script with "Windows Task Scheduler" and make it auto run at OS boot time. 
 - The example command line to run this script is: 
-	C:\Programs\Python36\pythonw.exe C:\Programs\IpMonitor\IpMonitor.py
+	pythonw.exe C:\Programs\IpMonitor\IpMonitor.py
 - Check for log file IpMonitor.py.txt located beside IpMonitor.py to see how things are going.
