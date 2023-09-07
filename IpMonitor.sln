@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "IpMonitor", "IpMonitor.pyproj", "{21A1D064-7E7E-487E-93B5-9B8ACC932F5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21A1D064-7E7E-487E-93B5-9B8ACC932F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A1D064-7E7E-487E-93B5-9B8ACC932F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4722BA0-D6DD-4B0D-8C35-81640A284D0F}
+	EndGlobalSection
+EndGlobal
