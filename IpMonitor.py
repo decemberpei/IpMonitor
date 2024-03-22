@@ -50,7 +50,12 @@ def report_new_ip(ip):
 		ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 		ssh.connect(hostname=vps_ip, username=vps_user, pkey=k)
 		stdin, stdout, stderr = ssh.exec_command('echo ' + ip + ' >> ' + socket.gethostname())
-		print(stdout.read().decode())
+		out = stdout.read().decode()
+		if len(out) > 0:
+			log('cmd out:' + out)
+		err = stderr.read().decode()
+		if len(err) > 0:
+			log('cmd err:' + out)
 		ssh.close()
 	except Exception as e:
 		log("Exception in report_new_ip: " + str(e))
