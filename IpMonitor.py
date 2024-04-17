@@ -45,18 +45,9 @@ def log(content):
 def report_new_ip(ip):
 	# global vps_ip, vps_key, vsp_user
 	try:
-		ssh = paramiko.SSHClient()
-		k = paramiko.RSAKey.from_private_key_file(vps_key)
-		ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-		ssh.connect(hostname=vps_ip, username=vps_user, pkey=k)
-		stdin, stdout, stderr = ssh.exec_command('echo ' + ip + ' >> ' + socket.gethostname())
-		out = stdout.read().decode()
-		if len(out) > 0:
-			log('cmd out:' + out)
-		err = stderr.read().decode()
-		if len(err) > 0:
-			log('cmd err:' + out)
-		ssh.close()
+		cmd = "ssh -i " + vps_key + " " + vps_user + "@" + vps_ip + " \"echo " + ip + " >> " + socket.gethostname() + "\""
+		os.system(cmd)
+		log("New Ip reported.")
 	except Exception as e:
 		log("Exception in report_new_ip: " + str(e))
 
