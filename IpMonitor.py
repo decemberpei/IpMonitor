@@ -74,7 +74,8 @@ if __name__ == '__main__':
 		log("Now Ip: " + now_ip)
 		if now_ip != init_ip:
 			log("WAN Ip has changed, report new Ip.")
-			report_new_ip(init_ip)
+			report_new_ip(now_ip)
+			init_ip = now_ip
 		else:
 			log("Same Ip, continue monitor.")
 
