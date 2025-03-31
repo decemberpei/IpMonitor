@@ -14,7 +14,7 @@ vps_user = 'xx'
 def get_wan_ip():
 	p = {"http": "","https": "",}
 	try:
-		ip = get('https://api.ipify.org',proxies=p).content.decode('utf8')
+		ip = get('https://checkip.amazonaws.com').text.strip()
 		if ip is None:
 			return None
 		match = re.match('\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', ip)

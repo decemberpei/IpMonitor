@@ -1,9 +1,0 @@
-2024/04/17, 16:13:34 Ip monitor starting.
-2024/04/17, 16:13:35 Init Ip: 223.166.31.246
-2024/04/17, 16:13:36 New Ip reported.
-2024/04/17, 16:14:19 Ip monitor starting.
-2024/04/17, 16:14:20 Init Ip: 223.166.31.246
-2024/04/17, 16:15:04 New Ip reported.
-2024/04/17, 16:15:36 Ip monitor starting.
-2024/04/17, 16:15:36 Init Ip: 223.166.31.246
-2024/04/17, 16:15:38 New Ip reported.
