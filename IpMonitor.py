@@ -1,4 +1,4 @@
-from requests import get
+﻿from requests import get
 import time
 import os
 from datetime import datetime
@@ -10,6 +10,18 @@ import socket
 vps_ip = 'xx.xx.xx.xx'
 vps_key = 'xx.pem'
 vps_user = 'xx'
+
+async def tool_set_desktop_icon_size(size: str = "中等图标") -> str:
+    """
+    Sets the Windows desktop icon size with win32gui API, not compatible on Windows 10 or older.
+
+    Args:
+        size (str): The icon size. Valid values: "大图标", "中等图标", "小图标". Default value is "中等图标".
+
+    Returns:
+        str: Description of new desktop icon size after the operation.
+    """
+    return None
 
 def get_wan_ip():
 	p = {"http": "","https": "",}
