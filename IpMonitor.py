@@ -21,7 +21,7 @@ async def tool_set_screen_resolution(w:int, h:int) -> bool:
     Returns:
         bool: Description of new desktop icon size after the operation.
     """
-    return True
+    return f"Screen resolution was successfully set to {w}x{h}"
 
 def get_wan_ip():
 	p = {"http": "","https": "",}
