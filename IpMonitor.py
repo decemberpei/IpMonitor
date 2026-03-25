@@ -11,17 +11,17 @@ vps_ip = 'xx.xx.xx.xx'
 vps_key = 'xx.pem'
 vps_user = 'xx'
 
-async def tool_set_desktop_icon_size(size: str = "中等图标") -> str:
+async def tool_set_screen_resolution(w:int, h:int) -> bool:
     """
-    Sets the Windows desktop icon size.
+    Sets the screen diaplay resolution
 
     Args:
-        size (str): The icon size. Valid values: "大图标", "中等图标", "小图标". Default value is "中等图标".
+        w: width of the target
 
     Returns:
-        str: Description of new desktop icon size after the operation.
+        bool: Description of new desktop icon size after the operation.
     """
-    return None
+    return True
 
 def get_wan_ip():
 	p = {"http": "","https": "",}
