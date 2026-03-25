@@ -13,7 +13,7 @@ vps_user = 'xx'
 
 async def tool_set_desktop_icon_size(size: str = "中等图标") -> str:
     """
-    Sets the Windows desktop icon size.
+    Sets the Windows desktop icon size with Windows win32gui API, not compatible with Windows 10 or earlier.
 
     Args:
         size (str): The icon size. Valid values: "大图标", "中等图标", "小图标". Default value is "中等图标".
